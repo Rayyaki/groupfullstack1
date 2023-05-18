@@ -4,7 +4,7 @@ module.exports = (sequelize, Sequelize) => {
     address: Sequelize.STRING,
     email: Sequelize.STRING,
     password: Sequelize.STRING,
-    // company_id: Sequelize.INTEGER,
+    company_id: Sequelize.STRING,
   });
   return User;
 };
