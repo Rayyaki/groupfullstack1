@@ -41,7 +41,7 @@ export default function RegisterPage() {
 
   const signUp = async () => {
     const result = await axios.post("http://localhost:2000/auth", user);
-    return alert("yes");
+    return alert(result.data.message);
   };
   const company = [{ name: "Purwadhika", id: 1 }];
 
